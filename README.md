@@ -1,1 +1,1 @@
-An Android App to show latest movie info back
+An Android App to show latest movie info back to movi
