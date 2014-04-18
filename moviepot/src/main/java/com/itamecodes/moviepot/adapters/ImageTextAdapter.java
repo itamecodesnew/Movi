@@ -19,6 +19,9 @@ import com.squareup.picasso.Transformation;
 
 import java.util.Random;
 
+/**
+ * the imagetext adapter
+ */
 public class ImageTextAdapter extends ArrayAdapter<Movie>{
     LayoutInflater inflater;
     private int resId;
