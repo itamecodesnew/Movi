@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/lightpinkbackgrounddark"
+    android:layout_height="match_parent">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:textColor="@color/antique_white"
+        android:id="@+id/textforsearch"/>
+    <!--<GridView
+        android:id="@+id/thegridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/image_thumbnail_spacing" />-->
+    <com.etsy.android.grid.StaggeredGridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:item_margin="8dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+        android:verticalSpacing="@dimen/image_thumbnail_spacing"
+        app:column_count_portrait="@integer/columncount" />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminate="true"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/moviedesccontainer"
+    android:layout_height="match_parent">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/moviedetailprogress"
+        android:visibility="visible"
+        />
+    <ImageView
+        android:id="@+id/moviebackdrop"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="350dp" />
+
+    <ScrollView
+        android:layout_below="@id/moviebackdrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/moviedetailtextpadding"
+                    android:paddingRight="@dimen/moviedetailtextpadding"
+                    android:id="@+id/moviedesc"
+                    android:textSize="@dimen/moviedetailtextsize"
+                    android:textColor="@color/antique_white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+
+    </ScrollView>
+
+    </RelativeLayout>
+
