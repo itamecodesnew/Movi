@@ -1,0 +1,1 @@
+An Android App to show latest movie info
