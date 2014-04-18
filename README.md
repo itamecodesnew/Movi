@@ -1,1 +1,1 @@
-An Android App to show latest movie info
+An Android App to show latest movie info on branch
